@@ -118,7 +118,6 @@ nav {
 }
 .flex__item {
   display: flex;
-  justify-content: space-between;
 }
 
 nav ul {
@@ -246,7 +245,6 @@ h2 {
   margin: 0px 20px 0px 20px;
 }
 .small-container h2 {
-  border-bottom: #b6b8d1 2px solid;
   font-size: 26px;
   font-weight: bold;
   padding-bottom: 30px;
@@ -255,6 +253,9 @@ h2 {
 }
 .common__sub-ttl {
   margin-bottom: 15px;
+}
+#news .common__ttl {
+  border-bottom: solid 2px #9d9eb4;
 }
 .news__list {
   padding-bottom: 40px;
@@ -358,19 +359,17 @@ service-wrap__item-content-ttl {
 
 #blog .container {
   background: #f0edf6fb;
+  padding: 0 180px 10px 180px;
 }
 #blog .common__ttl {
-  margin-left: 180px;
   padding: 0px 0px 30px 0px;
 }
 #blog .common__sub-ttl {
-  margin-left: 180px;
   margin-top: 200px;
   padding: 30px 0px 0px 0px;
 }
 .blog-wrap__item {
   position: relative;
-  margin: 1rem auto;
   width: 250px;
   overflow: hidden;
   border-radius: 8px;
@@ -386,9 +385,121 @@ service-wrap__item-content-ttl {
   border-radius: 0 0 0 0;
   background-color: rgb(179, 38, 92);
 }
-.flex__item blog-wrap {
-  margin: 0 180px 30px 180px;
-}
 .blog-wrap__item-content {
-  padding: 15px 25px;
+  padding: 10px 20px;
+}
+.blog-wrap__item-content-ttl {
+  line-height: 24px;
+  font-size: 13px;
+}
+.blog-wrap__item-content-tag {
+  margin-top: 30px;
+  font-size: 13px;
+}
+.blog__link {
+  width: 200px;
+  padding: 10px 0;
+  color: rgb(155, 20, 155);
+  border-radius: 30px;
+  border: solid rgb(158, 15, 158);
+  background: white;
+  text-align: center;
+  margin: 100px auto;
+  display: block;
+  padding: 15px 0 15px 0;
+}
+.company-table {
+  width: 800px;
+}
+table td {
+  border: 1px solid rgb(124, 115, 115);
+  padding: 20px 150px 20px 20px;
+  text-align: left;
+}
+table th {
+  border: 1px solid rgb(134, 127, 127);
+  padding: 20px 80px 20px 20px;
+  text-align: left;
+}
+
+.company-table__th {
+  font-weight: bold;
+  background-color: #dedede;
+}
+#contact {
+  margin: 100px;
+}
+.recruit__item--first {
+  position: relative;
+  background: url(../img/recruit.png) no-repeat center/cover;
+  height: 400px;
+  width: 650px;
+  float: left;
+}
+.recruit__item--second {
+  position: relative;
+  background: url(../img/interview.png) no-repeat center/cover;
+  height: 400px;
+  width: 650px;
+}
+.recruit__item-ttl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
+}
+#recruit .flex__item {
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+}
+.contact__btn {
+  position: relative;
+  background: linear-gradient(90deg, #e6609e, #ad255e);
+  width: 250px;
+  height: 55px;
+  display: block;
+  padding: 18;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 15px auto;
+  box-shadow: #7e1049 5px 5px 0;
+  line-height: 55px;
+}
+.contact__btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  background: url(../img/mailicon.svg) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+}
+.contact__ttl {
+  text-align: center;
+  margin: 0px 0px 15px 0px;
+}
+.v_line_fix {
+  width: 3px;
+  height: 50px;
+  background-color: brown;
+  margin-left: 50%;
+}
+.footer {
+  background: #e2dbe1;
+  height: 100px;
+  color: rgb(68, 62, 62);
+  margin-top: 100px;
+}
+
+.footer p {
+  text-align: center;
+  padding-top: 50px;
 }
